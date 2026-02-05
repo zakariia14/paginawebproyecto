@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Contacto.css">
+    <link rel="icon" href="favicon.ico" type="image/png">
+
+    <!--Fuente letra 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--Fuente letra 2 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"></div>
+            <a href="index.html"><img src="logo.png" alt="HTML tutorial" style="height:70px;"></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Nuestro_Equipo.html">Nuestro Equipo</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h1>Contacto</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Satoshi Nakamoto" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <div class="form-button">
+                <button type="submit" formaction="https://educadani.cat/doEcho.php">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Fitness Company. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/iikerrojas/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.facebook.com/f.vidalibarraquer?locale=es_ES" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="Politica_Privacidad.html" target="_blank">Política de privacidad</a></li>
+                <li><a href="Politica_Cookies.html" target="_blank">Política de cookies</a></li>
+                <li><a href="Aviso_Legal.html" target="_blank">Aviso legal</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
