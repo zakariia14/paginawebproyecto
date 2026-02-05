@@ -1,0 +1,204 @@
+/* Establece los márgenes y el relleno a 0, y asegura que el tamaño del cuadro incluya el borde y el relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: "Bebas Neue", serif; /* Fuente principal */
+    font-weight: 400; /* Grosor de la fuente */
+    font-style: normal; /* Estilo de la fuente */
+    background-color: #1b1b1b; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* Estilos del header */
+.header {
+    background-color: #131313; /* Tono oscuro de gris */
+    color: white; /* Color del texto blanco */
+    padding: 10px 0; /* Relleno superior e inferior */
+    display: flex; /* Uso de flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    border-bottom: 3px solid #d40000; /* Borde inferior rojo */
+    box-shadow: 0 5px 20px #d40000; /* Sombra roja debajo del header */
+}
+
+.header-content {
+    display: flex; /* Uso de flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 150px; /* Espacio entre logo y elementos del menú */
+}
+
+/* Estilo para los títulos de primer nivel */
+h1 {
+    font-size: 50px; /* Tamaño de la fuente del título */
+}
+
+.logo {
+    font-size: 1.5rem; /* Tamaño de la fuente del logo */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.nav ul {
+    list-style: none; /* Quita el estilo de lista por defecto */
+    display: flex; /* Uso de flexbox */
+    gap: 30px; /* Espacio entre elementos del menú */
+}
+
+.nav a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #d40000; /* Color rojo para los enlaces */
+    font-size: 35px; /* Tamaño de letra de los enlaces */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.nav a:hover {
+    color: #cccccc; /* Cambia el color del enlace al pasar el cursor */
+}
+
+.descripcion {
+    font-size: 20px;
+} 
+
+
+/* Estilos del contenido principal */
+.content {
+    padding: 20px; /* Relleno alrededor del contenido */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.equipo {
+    padding: 20px;
+    text-align: center;
+    background-color: #2c2c2c;
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.equipo h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carta {
+    background-color: #0a0a0a;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.carta:hover {
+    transform: scale(1.1);
+}
+
+.carta img {
+    width: 100%;
+    height: auto;
+}
+
+.carta h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.carta p {
+    font-size: 1em;
+    margin: 0 10px 10px;
+}
+
+/* Estilo del botón */
+#toTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #d40000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#toTopBtn:hover {
+    background-color: #d40000;
+}
+
+
+/* Footer styles */
+
+/* Estilos para el elemento footer */
+footer {
+    background-color: #0a0a0a; /* Color de fondo del footer */
+    padding: 20px 0; /* Espaciado interno arriba y abajo */
+    text-align: center; /* Centra el texto dentro del footer */
+    margin-top: auto; /* Empuja el footer al final de la página */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centra horizontalmente el contenido del footer */
+    padding: 0 20px; /* Espaciado interno a los lados */
+}
+
+/* Estilos para los párrafos dentro del contenido del footer */
+.footer-content p {
+    margin-bottom: 30px; /* Espacio inferior del párrafo */
+    font-size: 14px; /* Tamaño de fuente del párrafo */
+}
+
+/* Estilos para la lista de enlaces sociales */
+.social-links {
+    list-style: none; /* Quita el estilo de lista por defecto */
+    display: flex; /* Usa flexbox para los elementos hijos */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    margin-top: 10px; /* Espacio superior de la lista */
+}
+
+/* Estilos para los elementos de la lista de enlaces sociales */
+.social-links li {
+    margin: 0 15px; /* Espaciado horizontal entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces dentro de los elementos de la lista */
+.social-links li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #555555; /* Color del texto de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces en negrita */
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para los enlaces cuando el cursor pasa sobre ellos */
+.social-links li a:hover {
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Estilos para los iconos dentro de los elementos de la lista */
+.social-links li i {
+    margin-right: 8px; /* Espacio a la derecha de los iconos */
+}
+
+/* Estilos para los iconos dentro de los enlaces */
+.social-links li a i {
+    font-size: 18px; /* Tamaño de fuente de los iconos */
+}

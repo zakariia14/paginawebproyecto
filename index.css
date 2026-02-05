@@ -1,0 +1,341 @@
+/* Establece los márgenes y el relleno a 0, y asegura que el tamaño del cuadro incluya el borde y el relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: "Bebas Neue", serif; /* Fuente principal */
+    font-weight: 400; /* Grosor de la fuente */
+    font-style: normal; /* Estilo de la fuente */
+    background-color: #1b1b1b; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* Estilos del header */
+.header {
+    background-color: #131313; /* Tono oscuro de gris */
+    color: white; /* Color del texto blanco */
+    padding: 10px 0; /* Relleno superior e inferior */
+    display: flex; /* Uso de flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    border-bottom: 3px solid #d40000; /* Borde inferior rojo */
+    box-shadow: 0 5px 20px #d40000; /* Sombra roja debajo del header */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 2em; /* Relleno interno de 2em */
+    margin: 1em 0; /* Márgenes verticales de 1em */
+    background-color: #161616; /* Color de fondo oscuro */
+    margin-left: 20px; /* Margen izquierdo de 20px */
+    margin-right: 20px; /* Margen derecho de 20px */
+}
+
+.content {
+    color:#bbbbbb
+}
+
+.mapa {
+    border-top: 6px solid #d40000; /* Borde superior rojo */
+    border-left: 3px solid #d40000; /* Borde izquierdo rojo */
+    border-right: 3px solid #d40000; /* Borde derecho rojo */
+    border-bottom: 3px solid #d40000; /* Borde inferior rojo */
+    box-shadow: 0 5px 60px #d40000; /* Sombra roja alrededor de la imagen */
+}
+
+/* Estilos para los encabezados h1, h2, y h3 */
+h1, h2, h3 {
+    margin: 0 0 1em 0; /* Márgenes superiores de 1em */
+}
+
+/* Estilos para elementos con la clase .ne */
+.ne {
+    text-align: center; /* Texto centrado */
+    font-size: 50px; /* Tamaño de fuente de 50px */
+}
+
+/* Estilos para la galería */
+.galeria {
+    display: flex; /* Uso de flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+    justify-content: space-around; /* Espacio alrededor de los elementos */
+}
+
+/* Estilos para las columnas dentro de la galería */
+.columna {
+    flex: 1; /* Flexibilidad de las columnas */
+    margin: 0.5em; /* Márgenes de 0.5em */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilos para las imágenes dentro de las columnas */
+.columna img {
+    max-width: 100%; /* Ancho máximo del 100% */
+    height: auto; /* Altura automática */
+    margin-bottom: 1em; /* Margen inferior de 1em */
+}
+
+/* Estilos para la sección con el ID #servicios */
+#servicios {
+    background-color: #161616; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilos para los encabezados h2 dentro de la sección #servicios */
+#servicios h2 {
+    font-size: 2em; /* Tamaño de fuente de 2em */
+    margin-bottom: 1em; /* Margen inferior de 1em */
+    font-size: 50px; /* Tamaño de fuente de 50px */
+}
+
+/* Estilos para el contenedor de servicios */
+.servicios-contenedor {
+    display: flex; /* Uso de flexbox */
+    justify-content: center; /* Centrado horizontal */
+    gap: 2em; /* Espacio entre los elementos de 2em */
+}
+
+/* Estilos para cada servicio */
+.servicio {
+    background-color: #111; /* Fondo oscuro */
+    padding: 2em; /* Relleno de 2em */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 200px; /* Ancho de 200px */
+    text-align: center; /* Texto centrado */
+    transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
+
+/* Estilos para las imágenes dentro de cada servicio */
+.servicio img {
+    max-width: 90px; /* Ancho máximo de 90px */
+    height: auto; /* Altura automática */
+    margin-bottom: 1em; /* Margen inferior de 1em */
+}
+
+/* Estilos para los encabezados h3 dentro de cada servicio */
+.servicio h3 {
+    color: #be3838; /* Color rojo para los encabezados */
+}
+
+/* Estilos para los servicios cuando se pasa el cursor sobre ellos */
+.servicio:hover {
+    transform: translateY(-10px); /* Desplaza hacia arriba 10px */
+}
+
+/* Estilos para el contenido del header */
+.header-content {
+    display: flex; /* Uso de flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 150px; /* Espacio entre el logo y los elementos del menú */
+}
+
+/* Estilo para los títulos de primer nivel */
+h1 {
+    font-size: 50px; /* Tamaño de la fuente del título */
+}
+
+/* Estilos para el logo */
+.logo {
+    font-size: 1.5rem; /* Tamaño de la fuente del logo */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilos para la lista de navegación */
+.nav ul {
+    list-style: none; /* Quita el estilo de lista por defecto */
+    display: flex; /* Uso de flexbox */
+    gap: 30px; /* Espacio entre elementos del menú */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #d40000; /* Color rojo para los enlaces */
+    font-size: 35px; /* Tamaño de letra de los enlaces */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para los enlaces de navegación cuando se pasa el cursor sobre ellos */
+.nav a:hover {
+    color: #cccccc; /* Cambia el color del enlace al pasar el cursor */
+}
+
+/* Estilos del contenido principal */
+.content {
+    padding: 20px; /* Relleno alrededor del contenido */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Nuevos estilos para la sección de tarifas */
+.tarifas {
+    background-color: #161616; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 20px; /* Relleno de 20px */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilos para el contenido de tarifas */
+.tarifas-content {
+    display: flex; /* Uso de flexbox */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+/* Estilos para las cuotas y otros elementos */
+.cuotas, .otros {
+    flex: 1; /* Flexibilidad de las columnas */
+    min-width: 200px; /* Ancho mínimo de 200px */
+}
+
+/* Estilos para las listas de cuotas y otros elementos */
+.cuotas ul, .otros ul {
+    list-style: none; /* Quita el estilo de lista por defecto */
+    padding: 0; /* Quita el relleno */
+}
+
+/* Estilos para los elementos de las listas de cuotas y otros */
+.cuotas ul li, .otros ul li {
+    font-size: 50px; /* Tamaño de la fuente */
+    margin: 10px 0; /* Márgenes verticales de 10px */
+}
+
+/* Estilos para los spans dentro de las listas de cuotas y otros */
+.cuotas ul li span, .otros ul li span {
+    font-weight: bold; /* Fuente en negrita */
+    color: #be3838; /* Color rojo */
+}
+
+/* Estilos para las imágenes dentro de la sección de tarifas */
+.tarifas .image img {
+    max-width: 100%; /* Ancho máximo del 100% */
+    height: auto; /* Altura automática */
+    border-top: 3px solid #d40000; /* Borde superior rojo */
+    border-left: 3px solid #d40000; /* Borde izquierdo rojo */
+    border-right: 3px solid #d40000; /* Borde derecho rojo */
+    border-bottom: 3px solid #d40000; /* Borde inferior rojo */
+    box-shadow: 0 5px 60px #d40000; /* Sombra roja alrededor de la imagen */
+}
+
+/* Estilos para los elementos con la clase .tamaño */
+.tamaño {
+    font-size: 60px; /* Tamaño de la fuente */
+}
+
+/* Nuevos estilos para la sección de horarios */
+.horarios {
+    background-color: #161616; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 20px; /* Relleno de 20px */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilos para el contenido de la sección de horarios */
+.horarios-content {
+    display: flex; /* Uso de flexbox */
+    justify-content: space-around; /* Espacio alrededor de los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+/* Estilos para cada horario */
+.horario {
+    flex: 1; /* Flexibilidad de las columnas */
+    min-width: 150px; /* Ancho mínimo de 150px */
+    margin: 10px; /* Márgenes de 10px */
+}
+
+/* Estilos para los encabezados h2 dentro de cada horario */
+.horario h2 {
+    color: #be3838; /* Color rojo para los encabezados */
+    font-size: 35px; /* Tamaño de la fuente */
+}
+
+/* Estilos para los párrafos dentro de cada horario */
+.horario p {
+    font-size: 25px; /* Tamaño de la fuente */
+}
+
+/* Estilo del botón para volver arriba */
+#toTopBtn {
+    position: fixed; /* Posición fija en la ventana */
+    bottom: 20px; /* 20px desde el fondo */
+    right: 20px; /* 20px desde la derecha */
+    display: none; /* No se muestra por defecto */
+    background-color: #d40000; /* Color de fondo rojo */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno de 10px arriba y abajo, 20px a los lados */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón cuando se pasa el cursor sobre él */
+#toTopBtn:hover {
+    background-color: #d40000; /* Color de fondo rojo */
+}
+
+/* Estilos para el footer */
+
+/* Estilos para el elemento footer */
+footer {
+    background-color: #0a0a0a; /* Color de fondo del footer */
+    padding: 20px 0; /* Espaciado interno arriba y abajo */
+    text-align: center; /* Centra el texto dentro del footer */
+    margin-top: auto; /* Empuja el footer al final de la página */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centra horizontalmente el contenido del footer */
+    padding: 0 20px; /* Espaciado interno a los lados */
+}
+
+/* Estilos para los párrafos dentro del contenido del footer */
+.footer-content p {
+    margin-bottom: 30px; /* Espacio inferior del párrafo */
+    font-size: 14px; /* Tamaño de fuente del párrafo */
+}
+
+/* Estilos para la lista de enlaces sociales */
+.social-links {
+    list-style: none; /* Quita el estilo de lista por defecto */
+    display: flex; /* Usa flexbox para los elementos hijos */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    margin-top: 10px; /* Espacio superior de la lista */
+}
+
+/* Estilos para los elementos de la lista de enlaces sociales */
+.social-links li {
+    margin: 0 15px; /* Espaciado horizontal entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces dentro de los elementos de la lista */
+.social-links li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #555555; /* Color del texto de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces en negrita */
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para los enlaces cuando el cursor pasa sobre ellos */
+.social-links li a:hover {
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Estilos para los iconos dentro de los elementos de la lista */
+.social-links li i {
+    margin-right: 8px; /* Espacio a la derecha de los iconos */
+}
+
+/* Estilos para los iconos dentro de los enlaces */
+.social-links li a i {
+    font-size: 18px; /* Tamaño de fuente de los iconos */
+}
